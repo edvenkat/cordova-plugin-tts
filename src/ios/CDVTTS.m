@@ -66,7 +66,7 @@
     text = [options objectForKey:@"text"];
     locale = [options objectForKey:@"locale"];
     rate = [[options objectForKey:@"rate"] doubleValue];
-    pitch = [[options objectForKey:@"pitch"] doubleValue];
+    double pitch = [[options objectForKey:@"pitch"] doubleValue];
     
     if (!locale || (id)locale == [NSNull null]) {
         locale = @"en-US";
